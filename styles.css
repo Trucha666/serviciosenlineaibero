@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+  font-family: sans-serif;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-box img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.login-box input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.login-box .captcha {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-links {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
