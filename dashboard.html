@@ -9,11 +9,28 @@
   <link rel="icon" href="assets/favicon.ico">
 </head>
 <body class="dashboard">
+ <script>
+    let start = 1800;
+    function countdown() {
+      const timer = document.getElementById("timer");
+      let minutes = Math.floor(start / 60);
+      let seconds = start % 60;
+      timer.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds} Tiempo Restante`;
+      start--;
+      if (start < 0) start = 1800;
+      setTimeout(countdown, 1000);
+    }
+    window.onload = countdown;
+  </script>
+</head>
+<body class="dashboard">
+  <!-- Topbar como en dashboard.html -->
   <header class="topbar">
-    <img src="imagenes/Logo-2.png" alt="IBERO">
+    <img src="../imagenes/Logo-2.png" alt="IBERO">
     <div class="topbar__info">
       <span>233207-2 PONCE MENDEZ LUIS EDUARDO</span>
-      <span>👤 Mi Perfil</span>
+      <span id="timer">30:00 Tiempo Restante</span>
+      <span>Mi Perfil</span>
     </div>
   </header>
 
